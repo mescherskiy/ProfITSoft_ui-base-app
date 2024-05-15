@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, { useEffect, useState } from 'react';
 import {
   BrowserRouter,
   Routes,
@@ -19,6 +19,8 @@ import pageURLs from 'constants/pagesURLs';
 import SecretPage from 'pageProviders/Secret';
 import ThemeProvider from 'misc/providers/ThemeProvider';
 import UserProvider from 'misc/providers/UserProvider';
+import MoviesPage from 'pageProviders/Movies';
+import MoviePage from 'pageProviders/Movie';
 
 import actionsUser from '../actions/user';
 import Header from '../components/Header';
@@ -115,12 +117,24 @@ function App() {
                     />
                     <Route
                       element={(
+                        <MoviesPage />
+                      )}
+                      path={`${pageURLs[pages.moviesPage]}`}
+                    />
+                    <Route
+                      element={(
+                        <MoviePage />
+                      )}
+                      path={`${pageURLs[pages.moviePage]}`}
+                        />
+                    {/* <Route
+                      element={(
                         <MissedPage
                           redirectPage={`${pageURLs[pages.defaultPage]}`}
                         />
                       )}
                       path="*"
-                    />
+                    /> */}
                   </Routes>
                 )}
               </IntlProvider>

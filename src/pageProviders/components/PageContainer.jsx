@@ -51,7 +51,7 @@ function PageContainer({
         <div
           className={classNames(
             classes.content,
-            fullWidth && classes.fullWidth
+            fullWidth && classes.fullWidth,
           )}
         >
           <div className={classes.innerContent}>

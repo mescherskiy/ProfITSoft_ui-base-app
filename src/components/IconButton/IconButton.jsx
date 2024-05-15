@@ -16,6 +16,8 @@ const IconButton = ({
   onClick,
   onPress,
   onRelease,
+  position = "unset",
+  classes
 }) => {
   const { theme } = useTheme();
   return (
@@ -24,6 +26,7 @@ const IconButton = ({
       onClick={onClick}
       onMouseDown={onPress}
       onMouseUp={onRelease}
+      className={classes}
       sx={{
         '&.MuiIconButton-root': {
           '&.Mui-disabled': {
@@ -35,7 +38,8 @@ const IconButton = ({
           background: theme.button.color[colorVariant].background,
           color: theme.button.color[colorVariant].text,
           padding: `${theme.spacing(0.5)}px`,
-          opacity: disabled && '0.4',
+          position: {position}
+          // opacity: disabled && '0.4',
         },
       }}
     >
