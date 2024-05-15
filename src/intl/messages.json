@@ -4,6 +4,7 @@
   "page.default": "Home",
   "page.login": "Login",
   "page.secret": "Secret Page",
+  "page.movies": "List of movies",
   "signIn": "Sign In",
   "signOut": "Sign Out"
 }
