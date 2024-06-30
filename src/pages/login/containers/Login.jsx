@@ -218,6 +218,16 @@ function Login({
               </strong>
             </Typography>
           </Button>
+
+          <Button
+            colorVariant="primary"
+            onClick={() => fetch("http://localhost:1000/oauth/authenticate")}
+            variant="primary"
+          >
+            <Typography>
+              {formatMessage({ id: 'signInWithGoogle' })}
+            </Typography>
+          </Button>
         </div>
       </div>
       <Dialog
