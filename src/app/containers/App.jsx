@@ -27,6 +27,9 @@ import Header from '../components/Header';
 import IntlProvider from '../components/IntlProvider';
 import MissedPage from '../components/MissedPage';
 import SearchParamsConfigurator from '../components/SearchParamsConfigurator';
+import {
+  SUCCESS_SIGN_IN,
+} from '../constants/actionTypes';
 
 function App() {
   const dispatch = useDispatch();
@@ -52,6 +55,54 @@ function App() {
       ...state,
       componentDidMount: true,
     });
+  }, []);
+
+  useEffect(() => {
+    const urlParams = new URLSearchParams(window.location.search);
+    const auth = urlParams.get('auth');
+
+    if (auth && auth === "1") {
+      const fetchProfile = async () => {
+        console.log("Fetching profile...")
+        try {
+          const res = await fetch("/api/profile", {
+            method: "GET",
+            credentials: "include"
+          })
+
+          if (!res.ok) {
+            throw new Error('Unauthorized access');
+          }
+
+          const userInfo = await res.json()
+          console.log("USER: ", userInfo)
+          let firstName
+              let lastName
+              if (userInfo.name) {
+                const fullName = userInfo?.name.split(" ")
+                firstName = fullName[0]
+                lastName = fullName[1] || ""
+              }
+
+              const user = {
+                authorities: ['ENABLE_SEE_SECRET_PAGE'],
+                email: userInfo.email || "",
+                firstName: firstName || "",
+                id: '321',
+                lastName: lastName || "",
+                login: userInfo.email || ""
+              }
+              dispatch({
+                payload: user,
+                type: SUCCESS_SIGN_IN,
+              })
+        } catch (error) {
+          console.log("Error fetching profile")
+        }
+
+      }
+      fetchProfile()
+    }
   }, []);
 
   return (
@@ -126,7 +177,7 @@ function App() {
                         <MoviePage />
                       )}
                       path={`${pageURLs[pages.moviePage]}`}
-                        />
+                    />
                     {/* <Route
                       element={(
                         <MissedPage
