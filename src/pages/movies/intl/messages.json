@@ -1,0 +1,20 @@
+{ 
+    "title": "Title",
+    "year": "Year",
+    "genre": "Genre",
+    "director": "Director",
+    "rowsPerPage": "Rows per page",
+    "displayedRows": "of",
+    "moreThan": "more than",
+    "movieDeleted": "Movie successfully deleted!",
+    "confirmDelete": "Are you sure you want to delete movie",
+    "movieNotFound": "Movie not found",
+    "confirmation": "Confirmation",
+    "addBtn": "Add",
+    "filterBtn": "Filter",
+    "resetBtn": "Reset",
+    "deleteBtn": "Delete",
+    "cancelBtn": "Cancel",
+    "applyBtn": "Apply",
+    "filterMovies": "Filter movies"
+}

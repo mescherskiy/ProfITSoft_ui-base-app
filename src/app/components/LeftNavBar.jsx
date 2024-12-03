@@ -27,6 +27,12 @@ const menuItems = [
     neededAuthorities: [authorities.ENABLE_SEE_SECRET_PAGE],
     titleIntlId: `page.${pages.secretPage}`,
   },
+  {
+    icon: <IconLockOpen />,
+    link: `${pagesURLs[pages.moviesPage]}`,
+    neededAuthorities: [authorities.ENABLE_SEE_SECRET_PAGE],
+    titleIntlId: `page.${pages.moviesPage}`,
+  },
 ];
 
 function LeftNavBar() {

@@ -4,6 +4,7 @@
   "page.default": "Головна",
   "page.login": "Логiн",
   "page.secret": "Секретна Сторiнка",
+  "page.movies": "Список фільмів",
   "signIn": "Увiйти",
   "signOut": "Вийти"
 }

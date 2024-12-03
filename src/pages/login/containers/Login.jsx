@@ -143,6 +143,24 @@ function Login({
     }
   }, [isFetchingSignUp, isFailedSignUp]);
 
+  const handleLogin = async () => {
+    try {
+        const response = await fetch("http://localhost:1000/oauth/authenticate", {
+            method: 'GET',
+            credentials: 'include'
+        });
+
+        if (response.ok) {
+            const data = await response.json();
+            console.log("User Info:", data);
+        } else {
+            console.error("Failed to authenticate");
+        }
+    } catch (error) {
+        console.error("Error:", error);
+    }
+};
+
   return (
     <div className={classes.container}>
       <div className={classes.content}>
@@ -216,6 +234,17 @@ function Login({
               <strong>
                 {formatMessage({ id: 'signIn' })}
               </strong>
+            </Typography>
+          </Button>
+
+          <Button
+            colorVariant="primary"
+            onClick={() => window.location.href = "http://localhost:1000/oauth/authenticate"}
+            // onClick={handleLogin}
+            variant="primary"
+          >
+            <Typography>
+              {formatMessage({ id: 'signInWithGoogle' })}
             </Typography>
           </Button>
         </div>

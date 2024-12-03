@@ -1,0 +1,19 @@
+{ 
+    "title": "Назва",
+    "year": "Рік",
+    "genre": "Жанр",
+    "director": "Режисер",
+    "rowsPerPage": "Рядків на сторінці",
+    "displayedRows": "з",
+    "moreThan": "більше за",
+    "movieDeleted": "Фільм успішно видалений!",
+    "confirmDelete": "Ви впевнені, що хочете видалити фільм",
+    "movieNotFound": "Фільм не знайдено",
+    "confirmation": "Підтвердження",
+    "saveBtn": "Зберегти",
+    "cancelBtn": "Скасувати",
+    "createBtn": "Створити",
+    "movieEdited": "Фільм успішно збережено",
+    "invalid": "Невалідні значення полів",
+    "goBack": "Назад"
+}

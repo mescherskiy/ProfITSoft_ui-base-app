@@ -1,0 +1,308 @@
+[
+    {
+        "id": 1,
+        "title": "Avatar",
+        "year": 2009,
+        "genre": [
+            "Action",
+            "Adventure",
+            "Fantasy"
+        ],
+        "director": {
+            "id": 1,
+            "name": "James Cameron"
+        }
+    },
+    {
+        "id": 2,
+        "title": "Titanic",
+        "year": 1997,
+        "genre": [
+            "Drama",
+            "Romance"
+        ],
+        "director": {
+            "id": 1,
+            "name": "James Cameron"
+        }
+    },
+    {
+        "id": 3,
+        "title": "Avengers: Endgame",
+        "year": 2019,
+        "genre": [
+            "Action",
+            "Adventure",
+            "Drama"
+        ],
+        "director": {
+            "id": 2,
+            "name": "Anthony Russo, Joe Russo"
+        }
+    },
+    {
+        "id": 4,
+        "title": "Avengers: Infinity War",
+        "year": 2018,
+        "genre": [
+            "Action",
+            "Adventure",
+            "Fantasy"
+        ],
+        "director": {
+            "id": 2,
+            "name": "Anthony Russo, Joe Russo"
+        }
+    },
+    {
+        "id": 5,
+        "title": "Jurassic Park",
+        "year": 1993,
+        "genre": [
+            "Adventure",
+            "Sci-Fi",
+            "Thriller"
+        ],
+        "director": {
+            "id": 3,
+            "name": "Steven Spielberg"
+        }
+    },
+    {
+        "id": 6,
+        "title": "Jaws",
+        "year": 1975,
+        "genre": [
+            "Adventure",
+            "Thriller"
+        ],
+        "director": {
+            "id": 3,
+            "name": "Steven Spielberg"
+        }
+    },
+    {
+        "id": 7,
+        "title": "The Avengers",
+        "year": 2012,
+        "genre": [
+            "Action",
+            "Adventure",
+            "Sci-Fi"
+        ],
+        "director": {
+            "id": 4,
+            "name": "Joss Whedon"
+        }
+    },
+    {
+        "id": 8,
+        "title": "The Lion King",
+        "year": 2019,
+        "genre": [
+            "Adventure",
+            "Animation",
+            "Drama"
+        ],
+        "director": {
+            "id": 5,
+            "name": "Jon Favreau"
+        } 
+    },
+    {
+        "id": 9,
+        "title": "Frozen",
+        "year": 2013,
+        "genre": [
+            "Adventure",
+            "Animation",
+            "Comedy"
+        ],
+        "director": {
+            "id": 5,
+            "name": "Chris Buck, Jennifer Lee"
+        }
+    },
+    {
+        "id": 10,
+        "title": "Toy Story",
+        "year": 1995,
+        "genre": [
+            "Adventure",
+            "Animation",
+            "Comedy"
+        ],
+        "director": {
+            "id": 6,
+            "name": "John Lasseter"
+        }
+    },
+    {
+        "id": 11,
+        "title": "Toy Story 4",
+        "year": 2019,
+        "genre": [
+            "Adventure",
+            "Animation",
+            "Comedy"
+        ],
+        "director": {
+            "id": 7,
+            "name": "Josh Cooley"
+        }
+    },
+    {
+        "id": 12,
+        "title": "Finding Nemo",
+        "year": 2003,
+        "genre": [
+            "Adventure",
+            "Animation",
+            "Comedy"
+        ],
+        "director": {
+            "id": 8,
+            "name": "Andrew Stanton"
+        }
+    },
+    {
+        "id": 13,
+        "title": "Finding Dory",
+        "year": 2016,
+        "genre": [
+            "Adventure",
+            "Animation",
+            "Comedy"
+        ],
+        "director": {
+            "id": 9,
+            "name": "Andrew Stanton, Angus MacLane"
+        }
+    },
+    {
+        "id": 14,
+        "title": "The Incredibles",
+        "year": 2004,
+        "genre": [
+            "Action",
+            "Adventure",
+            "Animation"
+        ],
+        "director": {
+            "id": 10,
+            "name": "Brad Bird"
+        }
+    },
+    {
+        "id": 15,
+        "title": "The Incredibles 2",
+        "year": 2018,
+        "genre": [
+            "Action",
+            "Adventure",
+            "Animation"
+        ],
+        "director": {
+            "id": 10,
+            "name": "Brad Bird"
+        }
+    },
+    {
+        "id": 16,
+        "title": "Inside Out",
+        "year": 2015,
+        "genre": [
+            "Adventure",
+            "Animation",
+            "Comedy"
+        ],
+        "director": {
+            "id": 11,
+            "name": "Pete Docter, Ronnie Del Carmen"
+        }
+    },
+    {
+        "id": 17,
+        "title": "Zootopia",
+        "year": 2016,
+        "genre": [
+            "Adventure",
+            "Animation",
+            "Comedy"
+        ],
+        "director": {
+            "id": 12,
+            "name": "Byron Howard, Rich Moore, Jared Bush"
+        }
+    },
+    {
+        "id": 18,
+        "title": "Coco",
+        "year": 2017,
+        "genre": [
+            "Adventure",
+            "Animation",
+            "Family"
+        ],
+        "director": {
+            "id": 13,
+            "name": "Lee Unkrich, Adrian Molina"
+        }
+    },
+    {
+        "id": 19,
+        "title": "Moana",
+        "year": 2016,
+        "genre": [
+            "Adventure",
+            "Animation",
+            "Comedy"
+        ],
+        "director": {
+            "id": 14,
+            "name": "Ron Clements, John Musker"
+        }
+    },
+    {
+        "id": 20,
+        "title": "Aladdin",
+        "year": 1992,
+        "genre": [
+            "Adventure",
+            "Animation",
+            "Comedy"
+        ],
+        "director": {
+            "id": 14,
+            "name": "Ron Clements, John Musker"
+        }
+    },
+    {
+        "id": 21,
+        "title": "The Little Mermaid",
+        "year": 1989,
+        "genre": [
+            "Animation",
+            "Family",
+            "Fantasy"
+        ],
+        "director": {
+            "id": 14,
+            "name": "Ron Clements, John Musker"
+        }
+    },
+    {
+        "id": 22,
+        "title": "Beauty and the Beast",
+        "year": 1991,
+        "genre": [
+            "Animation",
+            "Family",
+            "Fantasy"
+        ],
+        "director": {
+            "id": 15,
+            "name": "Gary Trousdale, Kirk Wise"
+        }
+    }
+]
